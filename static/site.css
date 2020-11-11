@@ -2,6 +2,7 @@
 
 .demobox {
     background-color: #F93318;
+    float: left; 
 }
 
 @font-face {
