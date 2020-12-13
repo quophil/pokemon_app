@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+{% block Pokemon %}
+
+{% endblock %}
+{% block content %}
+<table class="paleBlueRows">
+    <tbody>
+    <tr>
+    <th colspan="2">
+    {{pokemon_name}}
+    </th>
+    </tr>
+    <tr>
+    <td colspan="2">
+        <img src="" 
+        alt="Sprite of searched Pokemon">
+    </td>
+    </tr>
+    <tr>
+    <td>PokeIndex</td>
+    <td>pokemon_index</td>
+    </tr>
+    <tr>
+    <th colspan="2">Types</th>
+    </tr>
+    <tr>
+    <td>Type 1</td>
+    <td>pokemon_type1</td>
+    </tr>
+    <tr>
+    <td>Type 2</td>
+    <td>pokemon_type2</td>
+    </tr>
+    <tr>
+    <th colspan="2">Measurements</th>
+    </tr>
+    <tr>
+    <td>Weight</td>
+    <td>pokemon_weight</td>
+    </tr>
+    <tr>
+    <td>Height</td>
+    <td>pokemon_height</td>
+    </tr>
+    </tbody>
+</table>
+{% endblock %}
