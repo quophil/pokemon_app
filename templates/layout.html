@@ -33,8 +33,14 @@
         </div>
     </header>
     <div style="width: auto; margin: auto;">
-        <input type="text">
-        <input type="button" value="Search">
+        <form method="POST">
+            <input name="pokemon_entry">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div>
+        {% block content %}
+        {% endblock %}
     </div>
     </body>
 </html>
