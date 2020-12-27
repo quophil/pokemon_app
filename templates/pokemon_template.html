@@ -7,12 +7,12 @@
     <tbody>
     <tr>
     <th colspan="2">
-    {{pokemon_name}}
+    {{pokemon_name.title()}}
     </th>
     </tr>
     <tr>
     <td colspan="2">
-        <img src="" 
+        <img src={{pokemon_sprite}} 
         alt="Sprite of searched Pokemon">
     </td>
     </tr>
@@ -25,11 +25,11 @@
     </tr>
     <tr>
     <td>Type 1</td>
-    <td>{{pokemon_type1}}</td>
+    <td>{{pokemon_type1.title()}}</td>
     </tr>
     <tr>
     <td>Type 2</td>
-    <td>{{pokemon_type2}}</td>
+    <td>{{pokemon_type2.title()}}</td>
     </tr>
     <tr>
     <th colspan="2">Measurements</th>
