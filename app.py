@@ -18,7 +18,7 @@ def pokemon_search_result():
         pokemon = {
             'pokemon_name': r['species']['name'],
             'pokemon_sprite': r['sprites']['front_default'],
-            'pokemon_index': r['game_indices'][0]['game_index'],
+            'pokemon_index': r['id'],
             'pokemon_type1': r['types'][0]['type']['name'],
             'pokemon_type2': 'No Type 2',
             'pokemon_weight': r['weight'],
