@@ -22,7 +22,7 @@
             <div style="padding-top: 30px; 
             padding-left: 15px;
             padding-right: 17px;
-            padding-bottom: 21px;
+            padding-bottom: 22px;
             font-size: 45px; 
             font-family: Pokemon; 
             color: #2a75bb;
@@ -32,13 +32,12 @@
             display: inline-block;">Search</div>
         </div>
     </header>
-    <div style="width: auto; margin: auto;">
+    <div style="width: 100%;
+    text-align:center;">
         <form method="POST">
             <input name="pokemon_entry">
             <input type="submit" value="Submit">
         </form>
-    </div>
-    <div>
         {% block content %}
         {% endblock %}
     </div>
