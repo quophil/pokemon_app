@@ -17,7 +17,7 @@ table.pokemonRows {
     height: 200px;
     text-align: center;
     border-collapse: collapse;
-    background: #FFFFFF;
+    background: #ffffff;
   }
   table.pokemonRows td, table.pokemonRows th {
     border: 1px solid #01ffaa81;

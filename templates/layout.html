@@ -1,5 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    .searchbox {
+        border: 3px solid black;
+        background: #ffffff;
+        margin: 20px;
+        margin-left: 500px;
+        margin-right: 500px;
+        padding: 20px;
+    }
+
+    .mainbackground {
+        background-image: url('https://i.imgur.com/O4ER2bT.jpg');
+        background-size: cover;
+    }
+
+    @import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
+    .demobox {
+        background-color: #F93318;
+        float: left; 
+        display: inline-block;
+        border: 3px solid black;
+        border-right: 0px;
+    }
+
+    @font-face {
+        font-family: "Pokemon";
+        src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg");
+    }
+
+    table.pokemonRows {
+        font-family: "Times New Roman", Times, serif;
+        border: 1px solid #FFFFFF;
+        width: 350px;
+        height: 200px;
+        text-align: center;
+        border-collapse: collapse;
+        background: #ffffff;
+    }
+    table.pokemonRows td, table.pokemonRows th {
+        border: 1px solid #01ffaa81;
+        padding: 3px 2px;
+    }
+    table.pokemonRows tbody td {
+        font-size: 13px;
+    }
+    table.pokemonRows th {
+        font-size: 17px;
+        background: #F93318;
+        border-bottom: 5px solid #FFFFFF;
+        font-weight: bold;
+        color: #021d36;
+        text-align: center;
+    }
+
+    
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +64,7 @@
     <link href="//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
 </head>
-<body style="
-background-image: url('https://i.imgur.com/O4ER2bT.jpg');
-background-size: cover;
-background-repeat: no-repeat;">
+<body class="mainbackground">
     <header>
         <div style="align-items: stretch;">
             <img
@@ -18,9 +72,6 @@ background-repeat: no-repeat;">
             src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png" 
             alt="Pokemon Logo"
             width="145"
-            style="display: inline-block;
-            border: 3px solid black;
-            border-right: 0px;"
             >
             <div style="padding-top: 30px; 
             padding-left: 15px;
@@ -36,9 +87,8 @@ background-repeat: no-repeat;">
             background: #ffffff;">Search</div>
         </div>
     </header>
-    <div style="width: 100%;
-    text-align:center;">
-        <form method="POST">
+    <div class="searchbox">
+        <form method="POST"style="text-align: center;">
             <input name="pokemon_entry">
             <input type="submit" value="Submit">
         </form>
