@@ -17,12 +17,27 @@
 
     @import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
 
-    .demobox {
+    .titlepokebox {
         background-color: #F93318;
-        float: left; 
+        float: none; 
         display: inline-block;
         border: 3px solid black;
         border-right: 0px;
+    }
+
+    .titlesearchbox {
+        padding-top: 30px; 
+        padding-left: 15px;
+        padding-right: 17px;
+        padding-bottom: 21px;
+        font-size: 45px; 
+        font-family: Pokemon; 
+        color: #2a75bb;
+        letter-spacing: 3px;
+        border: 3px solid black;
+        border-left: 0px;
+        display: inline-block;
+        background: #ffffff;
     }
 
     @font-face {
@@ -68,23 +83,12 @@
     <header>
         <div style="align-items: stretch;">
             <img
-            class="demobox" 
+            class="titlepokebox" 
             src="https://www.freepnglogos.com/uploads/pokemon-logo-png-0.png" 
             alt="Pokemon Logo"
             width="145"
             >
-            <div style="padding-top: 30px; 
-            padding-left: 15px;
-            padding-right: 17px;
-            padding-bottom: 22px;
-            font-size: 45px; 
-            font-family: Pokemon; 
-            color: #2a75bb;
-            letter-spacing: 3px;
-            border: 3px solid black;
-            border-left: 0px;
-            display: inline-block;
-            background: #ffffff;">Search</div>
+            <div class="titlesearchbox">Search</div>
         </div>
     </header>
     <div class="searchbox">
